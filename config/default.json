@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://banar123:banar123@reactproject-2zsz2.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secrettoken"
+}
