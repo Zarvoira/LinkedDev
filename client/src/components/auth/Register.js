@@ -1,7 +1,12 @@
 import React, { Fragment, useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { setAlert } from '../../actions/alert';
 
-const Register = () => {
-  const [formData, setFromData] = useState({
+const Register = ({ setAlert }) => {
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
@@ -9,15 +14,47 @@ const Register = () => {
   });
   const { name, email, password, password2 } = formData;
   const onChange = e =>
-    setFromData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const onSubmit = async e => {
+    e.preventDefault();
+    if (password !== password2) {
+      setAlert('password do not match', 'danger');
+    } else {
+      console.log('success');
+      // const newUser = {
+      //   name,
+      //   email,
+      //   password
+      // };
+
+      // try {
+      //   const config = {
+      //     headers: {
+      //       'Content-Type': 'application/json'
+      //     }
+      //   };
+
+      //   const body = JSON.stringify(newUser);
+      //   console.log(body);
+
+      //   const res = await axios.post('/api/users', body, config);
+
+      //   console.log(res.data);
+      // } catch (err) {
+      //   console.error(err.response.data);
+      // }
+    }
+  };
+
   return (
     <Fragment>
-      <h1 class='large text-primary'>Sign Up</h1>
-      <p class='lead'>
-        <i class='fas fa-user'></i> Create Your Account
+      <h1 className='large text-primary'>Sign Up</h1>
+      <p className='lead'>
+        <i className='fas fa-user'></i> Create Your Account
       </p>
-      <form class='form' action='create-profile.html'>
-        <div class='form-group'>
+      <form className='form' onSubmit={e => onSubmit(e)}>
+        <div className='form-group'>
           <input
             type='text'
             placeholder='Name'
@@ -27,7 +64,7 @@ const Register = () => {
             required
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='email'
             placeholder='Email Address'
@@ -36,12 +73,12 @@ const Register = () => {
             onChange={e => onChange(e)}
             required
           />
-          <small class='form-text'>
+          <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
           </small>
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='password'
             placeholder='Password'
@@ -52,7 +89,7 @@ const Register = () => {
             minLength='6'
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='password'
             placeholder='Confirm Password'
@@ -63,13 +100,17 @@ const Register = () => {
             minLength='6'
           />
         </div>
-        <input type='submit' class='btn btn-primary' value='Register' />
+        <input type='submit' className='btn btn-primary' value='Register' />
       </form>
-      <p class='my-1'>
-        Already have an account? <a href='login.html'>Sign In</a>
+      <p className='my-1'>
+        Already have an account? <Link to='/login'>Sign In</Link>
       </p>
     </Fragment>
   );
 };
 
-export default Register;
+Register.propTypes = {
+  setAlert: PropTypes.func.isRequired
+};
+
+export default connect(null, { setAlert })(Register);
