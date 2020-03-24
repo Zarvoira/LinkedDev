@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
 
-//test hello
-//TETSTSTSSHSH
-//askhdasd
 const initialState = {
   company: '',
   website: '',
