@@ -68,22 +68,25 @@ router.post(
     //build profile obj
     const profileFields = {};
     profileFields.user = req.user.id;
+
     if (company) profileFields.company = company;
+
+    if (linkedin) profileFields.linkedin = linkedin;
     if (website) profileFields.website = website;
-    if (location) profileFields.status = location;
+    if (location) profileFields.location = location;
     if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
     if (githubusername) profileFields.githubusername = githubusername;
-    if (skills) {
-      profileFields.skills = skills.split(',').map(skill => skill.trim());
-    }
-    //build social object
+
     profileFields.social = {};
-    if (youtube) profileFields.youtube = youtube;
-    if (twitter) profileFields.twitter = twitter;
-    if (facebook) profileFields.facebook = facebook;
-    if (linkedin) profileFields.linkedin = linkedin;
-    if (instagram) profileFields.instagram = instagram;
+    if (facebook) profileFields.social.facebook = facebook;
+    if (youtube) profileFields.social.youtube = youtube;
+    if (twitter) profileFields.social.twitter = twitter;
+    if (instagram) profileFields.social.instagram = instagram;
+
+    profileFields.skills = Array.isArray(skills)
+      ? skills
+      : skills.split(',').map(skill => ' ' + skill.trim());
 
     try {
       let profile = await Profile.findOne({ user: req.user.id });
@@ -341,8 +344,7 @@ router.get('/github/:username', (req, res) => {
       ),
       method: 'GET',
       headers: {
-        'user-agent': 'node.js',
-        Authorization: `token ${config.get('githubToken')}`
+        'user-agent': 'node.js'
       }
     };
 

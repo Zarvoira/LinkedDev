@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import alert from './alert';
 import auth from './auth';
+import post from './post.js';
 import profile from './profile';
 
 export default combineReducers({
   alert,
   auth,
-  profile
+  profile,
+  post
 });
