@@ -1,6 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://banar123:banar123@reactproject-2zsz2.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "secrettoken",
-  "githubClientId": "1e86ca972feecf511b8f",
-  "githubSecret": "8bb00214d2afc274ae314828d71bb000db92fae4"
+  "mongoURI": "",
+  "jwtSecret": "",
+  "githubClientId": "",
+  "githubSecret": ""
 }
