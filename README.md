@@ -1,9 +1,13 @@
 # LinkedDev
 
-is my attempt to create a simple  social media web application using MERN stack.
+is my attempt to create a simple  social media web application using MERN stack that act to share your developer portofolio (like linkedin but for developers!)
 
 # Features
-### this website is using JWT to verfiy logins
+* this website is using JWT to verfiy logins
+* REST API
+* using Redux as state manager
+* using MongoDB atlas as Database 
+
 
 
 # Quick Start 🚀
