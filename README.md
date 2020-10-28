@@ -1,5 +1,8 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Build Status][build-shield]]()
+[![Contributors][contributors-shield]]()
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
