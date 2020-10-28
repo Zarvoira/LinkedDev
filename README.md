@@ -10,7 +10,7 @@
 <p align="center">
   </a>
 
-  <h3 align="center">e</h3>
+  <h3 align="center">LinkedDev</h3>
 
   <p align="center">
     A Social Media Web for Developers
