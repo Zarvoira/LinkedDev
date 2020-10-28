@@ -65,18 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+This project is my attempt to make a simple social media based on linkedin but for developerss
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -96,11 +85,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
 ```
+
+*MongoDB Atlas
+create a free account and make a a cluster from mongo db atlas and copy the URI link
+
+*Github Api
+go to the  github settings > Developer Settings > OAuthApps
+
+
 
 ### Installation
 
@@ -133,7 +129,6 @@ npm run dev
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 
 
@@ -172,8 +167,8 @@ Use this space to show useful examples of how a project can be used. Additional 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/banar-agung-santosa-579223143/
-[product-screenshot]: images/screenshot1.png
-[product-screenshot]: images/screenshot2.png
+[product-screenshot1]: images/screenshot1.png
+[product-screenshot2]: images/screenshot2.png
 [product-screenshot]: images/screenshot3.png
 
 
