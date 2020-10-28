@@ -101,19 +101,6 @@ npm run dev
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-url]: https://github.com/Zarvoira/LinkedDev/graphs/contributors
@@ -130,5 +117,5 @@ npm run dev
 [product-screenshot2]: images/screenshot2.png
 [product-screenshot]: images/screenshot3.png
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
-[contributors-shield]: https://img.shields.io/badge/contributors-2-orange.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 
