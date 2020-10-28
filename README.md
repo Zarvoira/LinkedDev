@@ -2,7 +2,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Build Status][build-shield]]()
 [![Contributors][contributors-shield]]()
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -16,12 +15,11 @@
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A Social Media Web for Developers
     <br />
     <a href="https://github.com/Zarvoira/LinkedDev"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Zarvoira/LinkedDev">View Demo</a>
     
   </p>
 </p>
@@ -36,12 +34,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
@@ -109,8 +102,6 @@ npm run dev
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
 
 
@@ -118,20 +109,6 @@ npm run dev
 
 
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 
 
